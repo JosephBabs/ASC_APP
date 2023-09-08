@@ -1,11 +1,11 @@
-# Podux
+# Africa Sound City Web site
 
-Podcast website landing page
+Africa Sound City Web site
 
-![Podux light Theme](./public/screens/podux-light.png)
-![Podux Dark Theme](./public/screens/podux-dark.png)
+<!-- ![Podux light Theme](./public/screens/podux-light.png) -->
+<!-- ![Podux Dark Theme](./public/screens/podux-dark.png) -->
 
-![Podux Mobile Dark Theme](public/screens/mobileViewDark.jpg)
+<!-- ![Podux Mobile Dark Theme](public/screens/mobileViewDark.jpg) -->
 
 ## Tools
 
