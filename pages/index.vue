@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: 'Podux - Home',
+  title: 'Africa sound City',
   meta: [
-    { name: 'description', content: 'Podux Podcast landing page website.' },
+    { name: 'description', content: 'Africa Sound City website.' },
   ],
   link: [
     { rel: 'icon', type: 'image/png', href: '/logo.png' }

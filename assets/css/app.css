@@ -39,3 +39,8 @@ body{
 .invisible-scroll::-webkit-scrollbar {
     display: none;
 }
+
+.bg-primary{
+    --tw-bg-opacity: 1;
+    background-color: rgb(218 98 10 / var(--tw-bg-opacity));
+}

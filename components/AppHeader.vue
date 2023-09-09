@@ -9,19 +9,23 @@ function toggleNav(event: MouseEvent): void {
 
 const navLinks = [
     {
-        text: "Podcast",
+        text: "Accueil",
         href: "/"
     },
     {
-        text: "Solution",
+        text: "A propos",
         href: "/"
     },
     {
-        text: "Blog",
+        text: "Contacts",
         href: "/"
     },
     {
-        text: "About",
+        text: "Evenements",
+        href: "/"
+    },
+    {
+        text: "Restaurant ASC",
         href: "/"
     }
 ]
@@ -35,10 +39,11 @@ const navLinks = [
                 <div class="inline-flex relative bg-inherit">
                     <NuxtLink to="/" class=" flex items-center gap-2">
                         <span class="flex">
-                            <span class="w-3 h-6 rounded-l-full flex bg-primary"></span>
-                            <span class="w-3 h-6 rounded-r-full flex bg-[#f88fc2] mt-2"></span>
+                            <!-- <span class="w-3 h-6 rounded-l-full flex bg-primary"></span> -->
+                            <!-- <span class="w-3 h-6 rounded-r-full flex bg-[#f88fc2] mt-2"></span> -->
+                            <img src="/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                         </span>
-                        <span class="text-lg text-gray-700 dark:text-white">Podux</span>
+                        <span class="text-lg text-gray-700 dark:text-white">Africa Sound City</span>
                     </NuxtLink>
                 </div>
                 <div 
@@ -49,18 +54,19 @@ const navLinks = [
                     transition-all duration-300 ease-linear origin-top translate-y-6 lg:translate-y-0"
                     :class="navIsOpen?'!visible !opacity-100 !translate-y-0':''">
                     <ul class="text-gray-700 dark:text-gray-100 w-full flex lg:items-center gap-y-4 lg:gap-x-8 flex-col lg:flex-row">
-                        <AtomsNavLink v-for="navItem in navLinks" :href="navItem.href" :text="navItem.text" />
+                        <AtomsNavLink v-bind:key="navItem.text" v-for="navItem in navLinks" :href="navItem.href" :text="navItem.text" />
+
                     </ul>
                 </div>
 
                 <div class="flex items-center bg-inherit gap-1 lg:gap-3 min-w-max">
                     <ElementsThemeSwitcher />
                     <div class="hidden lg:flex lg:items-center gap-4">
-                        <AtomsLinkBtn href="#" variant="secondary">
-                            Signin
+                        <AtomsLinkBtn href="#" variant="primary" class="text-[#ff9815]">
+                            Connexion
                         </AtomsLinkBtn>
-                        <AtomsLinkBtn href="#" variant="primary">
-                            Join Us
+                        <AtomsLinkBtn href="#" variant="costum" class="bg-[#ff9815] text-white"> 
+                            Rejoignez-nous
                         </AtomsLinkBtn>
                     </div>
 
@@ -81,14 +87,14 @@ const navLinks = [
                                     <li
                                         class="flex select-none cursor-pointer items-center gap-3 px-2 py-2 rounded-md transition hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-200">
                                         <NuxtLink to="#">
-                                            Join-us
+                                            Rejoignez-nous
                                         </NuxtLink>
                                     </li>
 
                                     <li
                                         class="flex select-none cursor-pointer items-center gap-3 px-2 py-2 rounded-md transition hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-200">
                                         <NuxtLink to="#">
-                                            Signin
+                                            Connexion
                                         </NuxtLink>
                                     </li>
                                 </ul>
