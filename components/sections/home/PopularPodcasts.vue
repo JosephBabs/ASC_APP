@@ -16,90 +16,41 @@
         <AtomsContainer class-name="relative">
             <div class="flex justify-between pb-6 relative">
                 <div class="">
-                    <AtomsTitle texte="Popular podcast" />
+                    <AtomsTitle texte="Nos mets" />
                 </div>
                 <div class="flex items-center min-w-max gap-5">
                     <AtomsLinkBtn href="#" variant="primary">
-                        See all
+                        Voir tout
                     </AtomsLinkBtn>
                 </div>
             </div>
             <div
                 class="grid grid-cols-2 items-stretch sm:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-10 sm:gap-x-5 sm:gap-y-8">
 
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet,  voluptates porro" 
-                />
+                
 
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptates porro" 
-                />
-
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptates porro" 
-                />
-
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptates porro" 
-                />
-
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet,  voluptates porro" 
-                />
-
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptates porro" 
-                />
-
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptates porro" 
-                />
-
-                <CardsPodCast title="Start your journey in SEO" 
-                    href="#" 
-                    duration="24min"
-                    cover-image="/images/podCast.webp" 
-                    category="" 
-                    created-at=""
-                    description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptates porro" 
+                <CardsPodCast  :key="p.id" v-for="p in products" :title="p.title" 
+                    :href="''" 
+                    :price="p.price"
+                    :cover-image="p.image" 
+                    :category="p.category" 
+                    :created-at="''"
+                    :descriptions="p.description" 
                 />
                 
             </div>
         </AtomsContainer>
     </section>
 </template>
+
+<script setup>
+
+// title: 'test product',
+// price: 13.5,
+// description: 'lorem ipsum set',
+// image: 'https://i.pravatar.cc',
+// category: 'electronic'
+
+const {data: products} = await useFetch('https://fakestoreapi.com/products')
+
+</script>

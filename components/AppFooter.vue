@@ -5,14 +5,16 @@
                 <div class="col-span-2 md:col-span-4 lg:col-span-2">
                     <NuxtLink to="/" class=" flex items-center gap-2">
                         <span class="flex">
-                            <span class="w-3 h-6 rounded-l-full flex bg-primary"></span>
-                            <span class="w-3 h-6 rounded-r-full flex bg-[#f88fc2] mt-2"></span>
+                            <!-- <span class="w-3 h-6 rounded-l-full flex bg-primary"></span> -->
+                            <!-- <span class="w-3 h-6 rounded-r-full flex bg-[#f88fc2] mt-2"></span> -->
+                            <img src="/logo.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
                         </span>
-                        <span class="text-xl font-bold text-gray-700 dark:text-white">Podux</span>
+                        <span class="text-xl font-bold text-gray-700 dark:text-white">Africa Sound City</span>
                     </NuxtLink>
 
                     <p class="text-gray-600 dark:text-gray-300 pt-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nemo, veritatis
+                        "Africa Sound City (ASC) est une structure de Jah Baba Association, une organisation établie avec 
+                        l’objectif de préserver et promouvoir le riche et diversifié patrimoine culturel et musical du Bénin.
                     </p>
                 </div>
 
@@ -27,7 +29,7 @@
                 <div class="flex justify-between items-center gap-5 text-gray-600 dark:text-gray-300">
                     <div class="">
                         &copy; {{ new Date().getFullYear() }} Allright Reserved. Designed by <NuxtLink target="_blank"
-                            to="#" class="font-bold text-primary">Kat Mj</NuxtLink>
+                            to="#" class="font-bold text-primary">LEADSWILL TECH MEDIA</NuxtLink>
                     </div>
 
                     <div class="flex items-center gap-x-3">
@@ -58,41 +60,41 @@
 <script lang="ts" setup>
 const quickLinks = [
     {
-        href: "#",
-        text: "About us"
+        href: "/apropos",
+        text: "A propos"
     },
     {
-        href: "#",
-        text: "News"
+        href: "/studioasc",
+        text: "Notre Studio"
     },
     {
-        href: "#",
-        text: "Team"
+        href: "/live",
+        text: "L'espace Live"
     },
     {
-        href: "#",
-        text: "Solution"
+        href: "/formations",
+        text: "Formations"
     }
 ]
 const ressourcesLinks = [
     {
-        href: "#",
-        text: "Developpers"
+        href: "/programmations",
+        text: "Programmations"
+    },
+    {
+        href: "/repetitions",
+        text: "Répétitions"
     },
     {
         href: "#",
-        text: "Integration"
-    },
-    {
-        href: "#",
-        text: "Pricing"
+        text: "Formations"
     }
 ]
 
 const supportLinks = [
     {
         href: "#",
-        text: "Contact-us"
+        text: "Contactez-nous"
     },
     {
         href: "#",

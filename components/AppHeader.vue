@@ -14,19 +14,19 @@ const navLinks = [
     },
     {
         text: "A propos",
-        href: "/"
+        href: "/apropos"
     },
     {
         text: "Contacts",
-        href: "/"
+        href: "/contacts"
     },
     {
         text: "Evenements",
-        href: "/"
+        href: "/evenements"
     },
     {
         text: "Restaurant ASC",
-        href: "/"
+        href: "/restoasc"
     }
 ]
 
@@ -62,7 +62,7 @@ const navLinks = [
                 <div class="flex items-center bg-inherit gap-1 lg:gap-3 min-w-max">
                     <ElementsThemeSwitcher />
                     <div class="hidden lg:flex lg:items-center gap-4">
-                        <AtomsLinkBtn href="#" variant="primary" class="text-[#ff9815]">
+                        <AtomsLinkBtn href="#" variant="costum" class="text-[#ff9815] bg-indigo-950">
                             Connexion
                         </AtomsLinkBtn>
                         <AtomsLinkBtn href="#" variant="costum" class="bg-[#ff9815] text-white"> 
