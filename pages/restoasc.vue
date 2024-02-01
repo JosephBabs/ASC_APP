@@ -19,14 +19,11 @@
                 class="grid lg:grid-cols-2 gap-10 xl:gap-14 relative pt-24 lg:max-w-none max-w-2xl md:max-w-3xl mx-auto">
                 <div class="lg:py-6">
                     <div class="text-center lg:text-left">
-                        <span class="px-2 py-1 rounded-md bg-indigo-950 dark:bg-body text-[#f4ac1b] ">Centre Culturel et espace live
+                        <span class="px-2 py-1 rounded-md bg-indigo-950 dark:bg-body text-[#f4ac1b] ">Restaurant
                             </span>
                         <h1 class="text-gray-800 pt-4 dark:text-white font-bold text-4xl md:text-5xl lg:text-6xl">
-                            Le sanctuaire  de la  <br> <span
-                                class="text-transparent bg-clip-text bg-gradient-to-br from-[#cd3a01] to-[#f4ac1b]">culture</span>
-                                et des <span
-                                class="text-transparent bg-clip-text bg-gradient-to-br from-[#f4ac1b] to-[#cd3a01]">bonnes sonorités</span>
-                                 au Bénin.
+                            Le Restaurant  <br> <span
+                                class="text-transparent bg-clip-text bg-gradient-to-br from-[#cd3a01] to-[#f4ac1b]">Wakadjêhoun</span>
                         </h1>
                     </div>                    
                 </div>                

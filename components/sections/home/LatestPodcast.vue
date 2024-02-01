@@ -32,9 +32,11 @@
 
                 <div data-slide-recent @scroll="initScroll()"
                     class="flex items-stretch gap-5 overflow-hidden overflow-x-auto invisible-scroll">
+
                     <div v-for="item in events" :key="item.id"
                         class=" w-11/12 min-w-[91.666667%] xs:w-80 xs:min-w-[20rem] md:w-1/3 md:min-w-[33.333333%] lg:w-1/4 lg:min-w-[25%]">
-                        <CardsRecentPod :title="item.title" :duration="item.date" :href="'#'"
+                        
+                        <CardsRecentPod :title="item.title" :duration="item.date" :href="'/'+item.id"
                             :cover-image="item.coverimg" :artiste="item.artiste" :prix="item.prix" :lieu="item.lieu" :date="item.date"/>
                     </div>
                     

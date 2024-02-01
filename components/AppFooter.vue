@@ -29,7 +29,7 @@
                 <div class="flex justify-between items-center gap-5 text-gray-600 dark:text-gray-300">
                     <div class="">
                         &copy; {{ new Date().getFullYear() }} Allright Reserved. Designed by <NuxtLink target="_blank"
-                            to="#" class="font-bold text-primary">LEADSWILL TECH MEDIA</NuxtLink>
+                            to="#" class="font-bold text-primary">BAJOS MEDIA</NuxtLink>
                     </div>
 
                     <div class="flex items-center gap-x-3">

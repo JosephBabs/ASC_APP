@@ -1,10 +1,7 @@
 <template>
     <div>
-        <SectionsHomeHeroSection/>
-        <SectionsHomeLatestPodcast/>
-        <SectionsHomePopularPodcasts/>
-        <SectionsAboutPodux/>
-        <SectionsWhyUs/>
+        
+        <SectionsContacts-details/>
         <SectionsCallToAction/>
     </div>
 </template>

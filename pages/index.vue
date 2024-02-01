@@ -15,7 +15,7 @@ useHead({
         <SectionsHomeLatestPodcast/>
         <SectionsHomePopularPodcasts/>
         <SectionsAboutPodux/>
-        <SectionsWhyUs/>
+        <SectionsContacts-details/>
         <SectionsCallToAction/>
     </div>
 </template>

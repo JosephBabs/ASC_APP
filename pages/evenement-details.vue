@@ -2,8 +2,8 @@
     <div>
         <div></div>
         
-        <SectionsAboutPodux/>
-        <SectionsContacts-details/>
+        <SectionsEventPlus/>
+        <SectionsHomeLatestPodcast/>
         <SectionsCallToAction/>
     </div>
 </template>
